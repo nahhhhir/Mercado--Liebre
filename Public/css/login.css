@@ -1,0 +1,188 @@
+/* HEADER*/
+body {
+    margin: 0;
+    font-family: Roboto;
+    background-color: #ebebeb;
+}
+.header {
+    width: auto;
+    margin: 0;
+    padding: 20px;
+    background-color: #EAC926;
+}
+.main_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.logo { width: 45%; margin: 5px;}
+.busqueda {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 16px;
+    width:  100px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.barra span{ 
+    color: #666;
+    padding: 10px 3px 16px 0;
+}
+.barra{
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    height: 40px;
+    width: min-content;
+}
+.compra-cuotas {
+    font-weight: 400;
+    text-align: center;
+}
+.burger-menu {
+    color: #ebebeb;
+    background-color: #03264C;
+    width: 40px;
+    padding: 8px 0;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+.nav { display: none;}
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 12px;
+}
+.login li a{ padding: 5px ;}
+
+/* FORMULARIO*/
+.form{
+    padding: 40px 25px;
+}
+.section-form { margin-bottom: 50px;}
+.cuadrado { 
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 10px;
+    border: #ebebeb;
+    border-radius: 5px;
+}
+.button { 
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #03264C;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.button a{ color: white; text-decoration: none;}
+
+
+/* Footer*/
+.footer {
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.section_footer {  margin-top: 30px; }
+.footer_title {
+    margin: 0 5px;
+    color: black;
+    font-size: 20px;
+}
+p {
+    color: #666;
+    padding: 0 15px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.copy {
+    text-align: start;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.icon-footer {
+    color: #03264C;
+    font-size: 22px;
+    margin: 5px auto;
+}
+
+
+/* RESPONSIVE*/
+@media (min-width: 380px) {
+    .burger-menu { display: none; }
+    .busqueda{ width:  180px}
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav ul { display: flex;}
+    .nav li { margin: 5px; }
+}
+@media (min-width: 800px) {
+    .main_header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .busqueda {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 230px;
+        margin: 0;
+    }
+    .logo { width: 300px }
+    .main_header, .nav {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main_header {align-items: center;}
+    .busqueda { max-width: none;}
+    .compra-cuotas {
+        text-align: right;
+        margin: 0;
+        max-width: none;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .nav { margin-top: 40px; }
+    .nav li { margin: 0 10px;}
+    .nav a { font-size: 18px;}
+
+    .form { padding: 40px 20%;}
+
+    .button{ transition: background-color 1s ease;}
+    .button:hover { background-color: #0022AA;}
+
+    .footer{ 
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section_footer{ width: 30%;}   
+
+    .icon-footer { 
+        transition: color 1000ms ease-in;
+    }
+    .icon-footer:hover{
+        color: #ccb026;
+    }
+}
